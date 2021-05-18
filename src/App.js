@@ -42,6 +42,8 @@ const App = () => {
             autoComplete="off"
           />
         </div>
+      </div>
+      <div className="container">
         <div className="app-content">
           {typeof weather.main !== "undefined" ? (
             <div>

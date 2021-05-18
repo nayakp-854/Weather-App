@@ -2,6 +2,10 @@
   width: 100%;
   color: #fff;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   overflow: hidden;
   background: linear-gradient(180deg, rgb(17, 59, 199), rgb(158, 164, 219));
 }
@@ -13,17 +17,15 @@
 .container {
   width: 90%;
   max-width: 400px;
-  margin: 0 auto;
+  margin: 1em auto;
 }
 
 .app-header {
   width: 100%;
-  padding: 2em 0;
 }
 
 .app-content {
   height: 100%;
-  padding: 2em 0;
 }
 
 .text-center {
