@@ -2,20 +2,23 @@ import React, { useState } from "react";
 import "./App.css";
 import Today from "./Today";
 import Icon from "./Icon";
+
+const api = {
+  key: "90696144c5c39e1d85b4f3fda924ea14",
+  base: "http://api.openweathermap.org/data/2.5/",
+};
+
 const App = () => {
   const [query, setQuery] = useState("");
   const [weather, setWeather] = useState({});
 
   const search = (e) => {
     if (e.key === "Enter") {
-      fetch(
-        `http://api.openweathermap.org/data/2.5/weather?q=${query}&units=metric&APPID=90696144c5c39e1d85b4f3fda924ea14`
-      )
+      fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
         .then((res) => res.json())
         .then((result) => {
           setWeather(result);
           setQuery("");
-          console.log(result);
         });
     }
   };
