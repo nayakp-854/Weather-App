@@ -5,7 +5,7 @@ import Icon from "./Icon";
 
 const api = {
   key: "90696144c5c39e1d85b4f3fda924ea14",
-  base: "http://api.openweathermap.org/data/2.5/",
+  base: "https://api.openweathermap.org/data/2.5/",
 };
 
 const App = () => {
