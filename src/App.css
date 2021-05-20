@@ -18,7 +18,7 @@
 .container {
   width: 90%;
   max-width: 400px;
-  margin: 1em auto;
+  margin: 0 auto;
 }
 
 .app-header {
